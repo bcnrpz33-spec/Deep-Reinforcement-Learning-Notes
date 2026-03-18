@@ -37,7 +37,7 @@
 * **Chapter 6 | 随机近似与随机梯度下降**
   * `6.1` 均值估计问题回顾  `6.2` RM算法介绍  `6.3` RM算法收敛性及应用  `6.4` SGD算法介绍  `6.5` SGD算法收敛性及应用  `6.6` SGD算法有趣的性质  `6.7` SGD算法对比
 * **Chapter 7 | 时序差分方法 (Temporal Difference)**
-  * `7.1` 时序差分引入  `7.2` 时序差分算法  `7.3` 算法收敛性  `7.4` Sarsa 算法  `7.5` Expected Sarsa 和 n-step Sarsa  `7.6` Q-learning算法及用例  `7.8` TD算法的统一形式
+  * `7.1` 时序差分引入  `7.2` 时序差分算法  `7.3` 时序差分算法收敛性  `7.4` Sarsa 算法  `7.5` Expected Sarsa 和 n-step Sarsa算法  `7.6` Q-learning算法 `7.7` Q-learning例子  `7.8` TD算法的统一形式
 * **Chapter 8 | 值函数近似**
   * `8.1` 曲线拟合  `8.2` 目标函数  `8.3` 优化算法  `8.4` 示例与分析  `8.5` Sarsa和Q-learning  `8.6` DQN-basic  `8.7` DQN-Experience  `8.8` DQN代码与例子
 * **Chapter 9 | 策略梯度方法 (Policy Gradient)**
@@ -57,7 +57,7 @@
 * **基于时序差分**：涵盖 `Q-learning` / `Sarsa` / `Double Q-learning` / `DQN 系列`
 
 ### 2️⃣ 基于策略梯度 (Policy-Based)
-* **基于 MC**
+* **基于蒙特卡洛**
 * **基于时序差分** *(注：由于没有纯策略梯度的算法，此部分主要探讨 AC 架构的演进)*
 
 ### 3️⃣ 基于 Actor-Critic 架构 (AC Architecture)

